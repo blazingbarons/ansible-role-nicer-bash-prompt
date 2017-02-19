@@ -1,0 +1,23 @@
+galaxy_info:
+  author: Sam Hamilton
+  description: Ansible Nicer Bash Prompt Role
+  company: Blazing Barons
+  issue_tracker_url: https://github.com/blazingbarons/ansible-role-nicer-bash-prompt/issues
+  license: Apache
+  min_ansible_version: 1.9
+  platforms:
+    - name: Debian
+      versions:
+        - jessie
+    - name: Ubuntu
+      versions:
+        - trusty
+        - xenial
+    - name: EL
+      versions:
+        - 6
+        - 7
+  galaxy_tags:
+    - bash
+    - system
+dependencies: []
