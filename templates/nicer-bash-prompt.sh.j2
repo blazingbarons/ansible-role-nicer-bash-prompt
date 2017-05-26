@@ -123,7 +123,7 @@ function bash_prompt() {
 }
 
 # Function called every time bash displays the prompt
-function per_prompt_command {
+function per_prompt_command() {
     # Set the window title if a terminal window (Mac or Linux)
     case "$TERM" in
         xterm*|rxvt*)
@@ -137,4 +137,4 @@ function per_prompt_command {
     # CUSTOMIZE: Uncomment this if you want to sync history on every prompt, across multiple windows (see above)
     # history_sync
 }
-export PROMPT_COMMAND=per_prompt_command
+export PROMPT_COMMAND="$(per_prompt_command)"
